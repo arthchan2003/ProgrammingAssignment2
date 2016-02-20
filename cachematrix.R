@@ -2,6 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+## Model after makeVector. This function creates
+## the interface for a cached Matrix, including
+## 4 functions, set, get, setinverse and getinverse. 
 
 makeCacheMatrix <- function(x = matrix()) {
 	inv <- NULL		
@@ -19,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Write a short comment describing this function This functions cache
+## the inverse of a matrix after the first request.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
